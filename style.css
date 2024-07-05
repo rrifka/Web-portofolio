@@ -357,6 +357,11 @@ span {
     margin: auto;
 }
 
+.aboutme-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
 .aboutme-content h3 {
     font-size: 2.5rem; 
     margin-bottom: 1.5rem;
