@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your additional CSS styles can go here */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Rifka Tasya Ramadhani</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Halo, Saya <span>Rifka</span></h2>
+            <h3 class="text-animation">Saya seorang pelajar <span></span></h3>
+
+            <div class="social-icons">
+                <a href="https://github.com/rrifka"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/lopipupozcv?igsh=MWg4eXk4ajlqeG91eQ=="><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="image.png" alt="">
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2014 - 2019</div>
+                <div class="timeline-content">
+                    <h3><strong>Sekolah Derajat</strong></h3>
+                    <p>SDN Lowokwaru 4 Malang</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2022</div>
+                <div class="timeline-content">
+                    <h3><strong>Sekolah Menengah Pertama</strong></h3>
+                    <p>SMP Kartika IV-9 Malang</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - Sekarang</div>
+                <div class="timeline-content">
+                    <h3><strong>Sekolah Menengah Kejuruan</strong></h3>
+                    <p>SMKN 6 Malang</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <h2 class="heading">About Me</h2>
+        <div class="aboutme-content">
+            <h3><strong>Mari mengenal saya secara sekilas</strong></h3>
+            <p>Saya adalah seorang pelajar yang saat ini sedang menempuh pendidikan di SMKN 6 Malang, dengan jurusan yang berfokus pada pengembangan perangkat lunak (software engineering). Sebelumnya, saya telah aktif dalam mengerjakan proyek web. Meskipun proyek-proyek tersebut belum sepenuhnya sempurna, saya berkomitmen untuk terus belajar dan berkembang guna mencapai hasil terbaik. Jika Anda tertarik untuk melihat hasil proyek saya, silakan kunjungi profil GitHub saya. </p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST" onsubmit="clearForm()">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="hidden" name="access_key" value="25f6e631-141d-499e-9a1e-b9ef6c9c0da2">
+                    <input type="text" name="full_name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone_number" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <script>
+        function clearForm() {
+            
+            document.querySelector('input[name="full_name"]').value = '';
+            document.querySelector('input[name="email"]').value = '';
+            document.querySelector('input[name="phone_number"]').value = '';
+            document.querySelector('input[name="subject"]').value = '';
+            document.querySelector('textarea[name="message"]').value = '';
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://github.com/rrifka"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/lopipupozcv?igsh=MWg4eXk4ajlqeG91eQ=="><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#aboutme">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © Rifka Tasya Ramadhani | All Right Reserved
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
